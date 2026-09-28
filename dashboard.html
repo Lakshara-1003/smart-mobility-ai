@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Traffic Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">🚦</div>
+
+        <div>
+            <h1>SMART TRAFFIC</h1>
+            <p>Management & Route Suggestion System</p>
+        </div>
+
+    </div>
+
+    <div class="system-status">
+
+        <span class="status-dot"></span>
+
+        DASHBOARD ACTIVE
+
+    </div>
+
+</header>
+
+
+<nav class="steps">
+
+    <div class="step">
+        <span>01</span>
+        <p>COMMAND</p>
+    </div>
+
+    <div class="step">
+        <span>02</span>
+        <p>TRIP DETAILS</p>
+    </div>
+
+    <div class="step">
+        <span>03</span>
+        <p>TRAFFIC SCAN</p>
+    </div>
+
+    <div class="step">
+        <span>04</span>
+        <p>RECOMMENDATION</p>
+    </div>
+
+    <div class="step active">
+        <span>05</span>
+        <p>DASHBOARD</p>
+    </div>
+
+</nav>
+
+
+<main class="container">
+
+
+    <!-- TITLE -->
+
+    <section class="hero-section">
+
+        <div>
+
+            <span class="small-label">
+                05 / DASHBOARD
+            </span>
+
+            <h2>
+                Traffic
+                <span>Dashboard.</span>
+            </h2>
+
+            <p>
+                Overview of the analyzed traffic conditions,
+                route performance and system recommendation.
+            </p>
+
+        </div>
+
+        <div class="hero-icon">
+            📊
+        </div>
+
+    </section>
+
+
+
+    <!-- SUMMARY -->
+
+    <section class="info-grid">
+
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                🛣️
+            </div>
+
+            <h3>4 Routes</h3>
+
+            <p>
+                Routes analyzed
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                ⏱️
+            </div>
+
+            <h3>25 min</h3>
+
+            <p>
+                Recommended travel time
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">
+                🟢
+            </div>
+
+            <h3>Low Traffic</h3>
+
+            <p>
+                Recommended route status
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- TRAFFIC OVERVIEW -->
+
+    <section class="panel">
+
+        <div class="panel-heading">
+
+            <div>
+
+                <span class="small-label">
+                    TRAFFIC OVERVIEW
+                </span>
+
+                <h2>
+                    Route Traffic Status
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="route-grid">
+
+
+            <!-- ROUTE A -->
+
+            <div class="route-card moderate">
+
+                <div class="route-top">
+
+                    <span class="route-name">
+                        ROUTE A
+                    </span>
+
+                    <span class="traffic-badge moderate-badge">
+                        MEDIUM
+                    </span>
+
+                </div>
+
+                <h3>
+                    29
+                    <small>min</small>
+                </h3>
+
+                <div class="route-info">
+
+                    <span>842 vehicles</span>
+
+                    <span>39% load</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:39%"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ROUTE B -->
+
+            <div class="route-card low">
+
+                <div class="route-top">
+
+                    <span class="route-name">
+                        ROUTE B
+                    </span>
+
+                    <span class="traffic-badge low-badge">
+                        LOW
+                    </span>
+
+                </div>
+
+                <h3>
+                    25
+                    <small>min</small>
+                </h3>
+
+                <div class="route-info">
+
+                    <span>436 vehicles</span>
+
+                    <span>18% load</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:18%"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ROUTE C -->
+
+            <div class="route-card heavy">
+
+                <div class="route-top">
+
+                    <span class="route-name">
+                        ROUTE C
+                    </span>
+
+                    <span class="traffic-badge heavy-badge">
+                        HIGH
+                    </span>
+
+                </div>
+
+                <h3>
+                    34
+                    <small>min</small>
+                </h3>
+
+                <div class="route-info">
+
+                    <span>1,298 vehicles</span>
+
+                    <span>67% load</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:67%"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ROUTE D -->
+
+            <div class="route-card moderate">
+
+                <div class="route-top">
+
+                    <span class="route-name">
+                        ROUTE D
+                    </span>
+
+                    <span class="traffic-badge moderate-badge">
+                        MEDIUM
+                    </span>
+
+                </div>
+
+                <h3>
+                    27
+                    <small>min</small>
+                </h3>
+
+                <div class="route-info">
+
+                    <span>638 vehicles</span>
+
+                    <span>31% load</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:31%"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINAL RECOMMENDATION -->
+
+    <section class="recommendation">
+
+        <div class="recommend-icon">
+            ✓
+        </div>
+
+        <div>
+
+            <span class="small-label">
+                FINAL SYSTEM RECOMMENDATION
+            </span>
+
+            <h2>
+                Route B
+            </h2>
+
+            <p>
+                Route B has the lowest estimated traffic load
+                and shortest travel time in this demo analysis.
+                It is therefore displayed as the recommended
+                route for the selected journey.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- NEW JOURNEY -->
+
+    <div class="navigation-buttons">
+
+        <button onclick="window.location.href='index.html'">
+            ← Start New Journey
+        </button>
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        Smart Traffic Management & Route Suggestion System
+    </p>
+
+    <span>
+        AI & Data Science Project
+    </span>
+
+</footer>
+
+
+</body>
+
+</html>

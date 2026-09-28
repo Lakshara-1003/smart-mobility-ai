@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Traffic Scan | Smart Traffic Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-header">
+
+        <div class="brand">
+            <div class="brand-icon">🚦</div>
+
+            <div>
+                <h1>SMART TRAFFIC</h1>
+                <p>Management & Route Suggestion System</p>
+            </div>
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            <span>ALL SYSTEMS NOMINAL</span>
+        </div>
+
+    </header>
+
+
+    <!-- FLOW -->
+    <nav class="steps">
+
+        <div class="step">
+            <span>01</span>
+            <p>COMMAND</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <p>TRIP DETAILS</p>
+        </div>
+
+        <div class="step active">
+            <span>03</span>
+            <p>TRAFFIC SCAN</p>
+        </div>
+
+        <div class="step">
+            <span>04</span>
+            <p>RECOMMENDATION</p>
+        </div>
+
+        <div class="step">
+            <span>05</span>
+            <p>DASHBOARD</p>
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- PAGE TITLE -->
+        <section class="hero-section">
+
+            <div>
+                <span class="small-label">03 / TRAFFIC SCAN</span>
+
+                <h2>
+                    Analyze the
+                    <span>traffic.</span>
+                </h2>
+
+                <p>
+                    Compare available route corridors using traffic
+                    density, estimated travel time and road load.
+                </p>
+            </div>
+
+            <div class="hero-icon">
+                📊
+            </div>
+
+        </section>
+
+
+        <!-- SCAN STATUS -->
+        <section class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <span class="small-label">LIVE ROUTE ANALYSIS</span>
+                    <h2>Traffic Scan Results</h2>
+                </div>
+
+                <div class="live-badge">
+                    ● DEMO DATA
+                </div>
+
+            </div>
+
+
+            <!-- ROUTES -->
+            <div class="route-grid">
+
+
+                <!-- ROUTE A -->
+                <div class="route-card moderate">
+
+                    <div class="route-top">
+                        <span class="route-name">ROUTE A</span>
+                        <span class="traffic-badge moderate-badge">
+                            MODERATE
+                        </span>
+                    </div>
+
+                    <h3>29 <small>min</small></h3>
+
+                    <div class="route-info">
+                        <span>842 vehicles</span>
+                        <span>39% load</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:39%"></div>
+                    </div>
+
+                    <p>
+                        Normal traffic with moderate congestion.
+                    </p>
+
+                </div>
+
+
+                <!-- ROUTE B -->
+                <div class="route-card low">
+
+                    <div class="route-top">
+                        <span class="route-name">ROUTE B</span>
+                        <span class="traffic-badge low-badge">
+                            LOW
+                        </span>
+                    </div>
+
+                    <h3>25 <small>min</small></h3>
+
+                    <div class="route-info">
+                        <span>436 vehicles</span>
+                        <span>18% load</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:18%"></div>
+                    </div>
+
+                    <p>
+                        Lower congestion and smoother movement.
+                    </p>
+
+                </div>
+
+
+                <!-- ROUTE C -->
+                <div class="route-card heavy">
+
+                    <div class="route-top">
+                        <span class="route-name">ROUTE C</span>
+                        <span class="traffic-badge heavy-badge">
+                            HEAVY
+                        </span>
+                    </div>
+
+                    <h3>34 <small>min</small></h3>
+
+                    <div class="route-info">
+                        <span>1,298 vehicles</span>
+                        <span>67% load</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:67%"></div>
+                    </div>
+
+                    <p>
+                        Heavy congestion and slower movement.
+                    </p>
+
+                </div>
+
+
+                <!-- ROUTE D -->
+                <div class="route-card moderate">
+
+                    <div class="route-top">
+                        <span class="route-name">ROUTE D</span>
+                        <span class="traffic-badge moderate-badge">
+                            MODERATE
+                        </span>
+                    </div>
+
+                    <h3>27 <small>min</small></h3>
+
+                    <div class="route-info">
+                        <span>638 vehicles</span>
+                        <span>31% load</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:31%"></div>
+                    </div>
+
+                    <p>
+                        Moderate traffic with acceptable travel time.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUMMARY -->
+            <div class="scan-summary">
+
+                <div class="summary-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <span class="small-label">
+                        ANALYSIS COMPLETE
+                    </span>
+
+                    <h3>
+                        Route B currently has the lowest congestion.
+                    </h3>
+
+                    <p>
+                        The system compares traffic load and estimated
+                        travel time before generating a route suggestion.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+            <div class="action-row">
+
+                <a href="index.html" class="back-btn">
+                    ← Back to Trip Details
+                </a>
+
+                <a href="recommendation.html" class="primary-btn">
+                    View Recommendation →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Smart Traffic Management & Route Suggestion System
+        </p>
+
+        <span>
+            AI & Data Science Project
+        </span>
+
+    </footer>
+
+
+</body>
+</html>
