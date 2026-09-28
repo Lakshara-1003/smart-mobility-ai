@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Traffic Management System</title>
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<header class="hero">
+  <div class="brand">SMART TRAFFIC MANAGEMENT SYSTEM</div>
+  <p>AI-Based Intelligent Route Suggestion System</p>
+</header>
+
+<main class="container">
+  <section class="panel input-panel">
+    <h2>Enter Journey Details</h2>
+
+    <label for="start">Starting Location</label>
+    <input id="start" type="text" placeholder="Enter starting location">
+
+    <label for="destination">Destination</label>
+    <input id="destination" type="text" placeholder="Enter destination">
+
+    <label for="travelTime">Travel Time</label>
+    <input id="travelTime" type="time">
+
+    <label for="vehicle">Vehicle Type</label>
+    <select id="vehicle">
+      <option value="">Select Vehicle</option>
+      <option>Car</option>
+      <option>Bike</option>
+      <option>Bus</option>
+      <option>Auto</option>
+    </select>
+
+    <label for="fuel">Fuel Type</label>
+    <select id="fuel">
+      <option value="">Select Fuel</option>
+      <option>Petrol</option>
+      <option>Diesel</option>
+      <option>Electric</option>
+      <option>CNG</option>
+    </select>
+
+    <button id="analyzeBtn" type="button">ANALYZE TRAFFIC</button>
+    <div id="message" class="message"></div>
+  </section>
+
+  <section class="panel result-panel">
+    <div id="emptyState">
+      <h2>Traffic &amp; Route Analysis</h2>
+      <p>Enter your journey details and click <b>Analyze Traffic</b> to compare multiple routes.</p>
+    </div>
+
+    <div id="results" class="hidden">
+      <div class="journey-summary">
+        <h2>Traffic &amp; Route Analysis</h2>
+        <p><b>From:</b> <span id="fromText"></span></p>
+        <p><b>To:</b> <span id="toText"></span></p>
+        <p><b>Travel Time:</b> <span id="timeText"></span></p>
+        <p><b>Vehicle:</b> <span id="vehicleText"></span> &nbsp; <b>Fuel:</b> <span id="fuelText"></span></p>
+      </div>
+
+      <div class="traffic-legend">
+        <span><i class="dot red"></i> High / Heavy</span>
+        <span><i class="dot orange"></i> Medium / Moderate</span>
+        <span><i class="dot yellow"></i> Low</span>
+        <span><i class="dot green"></i> No Traffic</span>
+      </div>
+
+      <div class="route-map">
+        <div class="road road-a"><span>A</span></div>
+        <div class="road road-b"><span>B</span></div>
+        <div class="road road-c"><span>C</span></div>
+        <div class="road road-d"><span>D</span></div>
+        <div class="origin">START</div>
+        <div class="destination">END</div>
+      </div>
+
+      <div id="routeCards" class="route-grid"></div>
+      <div id="recommendation" class="recommendation"></div>
+    </div>
+  </section>
+</main>
+
+<footer>Smart Traffic Management System • Route comparison demo</footer>
+<script src="script.js?v=3" defer></script>
+</body>
+</html>
